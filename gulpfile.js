@@ -3,6 +3,7 @@ var babelify = require('babelify');
 var browserify = require('browserify');
 var browserSync = require('browser-sync');
 var buffer = require('vinyl-buffer');
+var exit = require('gulp-exit');
 var ghPages = require('gulp-gh-pages');
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
@@ -78,7 +79,8 @@ gulp.task('default', ['build'], function() {
 
 gulp.task('publish', ['build'], function() {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages());
+    .pipe(ghPages())
+    .pipe(exit());
 });
 
 gulp.task('watch', ['build', 'js:watch', 'static:watch', 'css:watch'], function() {
