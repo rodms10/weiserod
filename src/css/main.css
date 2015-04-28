@@ -189,11 +189,6 @@ section.wrapper {
   background-color: #eee;
 }
 
-.section-column img {
-  width: 200px;
-  height: 200px;
-}
-
 section.light-section {
   background-color: #eee;
 }
@@ -203,7 +198,9 @@ section.light-section .section-column {
 }
 
 .avatar {
-    margin-bottom: 20px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
 }
 
 img.avatar {
