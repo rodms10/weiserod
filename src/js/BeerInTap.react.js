@@ -15,7 +15,12 @@ var BeerInTap = React.createClass({
       <div className="section-column">
         <h3 className="tap">{this.props.tap} tap</h3>
         <h3>{beer.name} {beer.style}</h3>
-        <img src={beer.labelThumbImg} width={beer.width} height="200" />
+        <img
+          className="beer-label"
+          src={beer.labelThumbImg}
+          width={beer.width}
+          height="200"
+        />
         <p>{beer.description}</p>
       </div>
     );
