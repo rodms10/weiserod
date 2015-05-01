@@ -15,7 +15,7 @@ var Beers = {
       name: "Oatee",
       style: "Oatmeal Stout",
       abv: "Brewing",
-      description: "A full bodied dark stout beer for the serious drinker. A hint of chocolate and oat texture makes this a favorite. This classic stout flavor leaves you wanting more.",
+      description: "A full bodied dark stout beer for the serious drinker. A hint of chocolate and oat texture makes this a favorite. The classic stout flavor leaves you wanting more.",
       labelThumbImg: "img/oatee-label-thumb.png",
       labelImg: "img/oatee-label-thumb.png",
       width: 200,
