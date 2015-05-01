@@ -60,7 +60,7 @@ gulp.task('static', function() {
 });
 
 gulp.task('js:watch', function() {
-  gulp.watch(['./src/js/page.js'], ['js']).on('change', reload);
+  gulp.watch(['./src/js/**'], ['js']).on('change', reload);
 });
 
 gulp.task('css:watch', function() {
