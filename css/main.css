@@ -138,21 +138,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
-#banner .more:after {
-  background-image: url("../img/arrow.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  bottom: 4em;
-  content: '';
-  display: block;
-  height: 1.5em;
-  left: 50%;
-  margin: 0 0 0 -0.75em;
-  position: absolute;
-  width: 1.5em;
-}
-
 /* Sections */
 
 section.wrapper {
@@ -181,6 +166,10 @@ section.wrapper {
   padding: 0;
 }
 
+.wrapper header p {
+  margin: 1em;
+}
+
 .section-column-container {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -197,6 +186,14 @@ section.wrapper {
   margin: 25px 30px 0;
   padding: 15px;
   background-color: #eee;
+}
+
+.section-column h3 {
+  letter-spacing: 0.125em;
+}
+
+.section-column .tap {
+  text-decoration: underline;
 }
 
 section.light-section {
@@ -221,9 +218,7 @@ img.avatar {
 
 .footer-container {
   background-color: rgba(29, 36, 42, 0.9);
-  height: 5em;
-  line-height: 5em;
-  margin: auto;
+  padding: 2.5em 0;
   width: 100%;
 }
 
@@ -239,38 +234,51 @@ img.avatar {
   margin: 0 3em;
 }
 
+.footer-container a {
+  color: white;
+  text-decoration: none;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 768px) {
+  #banner {
+    width: 100%;
+  }
 
+  .section-column-container {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .section-column {
+    width: inherit;
+  }
+
+  .section-column img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .footer-container h3 {
+    font-size: 11px;
+  }
+
+  .main-container {
+    background-attachment: scroll;
+    background-size: auto 100vh;
+    background-repeat: repeat;
+  }
 }
 
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 1140px) {
-
-}
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.clearfix {
-  *zoom: 1;
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .section-column img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 

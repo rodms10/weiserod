@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class="header-container">
@@ -25,7 +26,9 @@
             <section id="banner">
                 <h2>Weiserod</h2>
                 <p>The right size brewery for optimum taste.</p>
-                <a href="#one" class="more scrolly">Learn More</a>
+                <a href="#one" class="more scrolly">Learn More <br />
+                    <i class="fa  fa-angle-double-down fa-lg"></i>
+                </a>
             </section>
 
         <section id="one" class="wrapper">
@@ -34,18 +37,7 @@
                 <p>All our beers are carefully hand crafted in small batches.
                 Really small batches.</p>
             </header>
-            <div class="section-column-container">
-                <div class="section-column">
-                    <h3>Left tap:<br/>Oatee Oatmeal Stout</h3>
-                    <img src="img/oatee-label-thumb.png" width="200" height="200" />
-                    <p>A full bodied dark stout beer for the serious drinker. A hint of chocolate and oat texture makes this a favorite. This classic stout flavor leaves you wanting more.</p>
-                </div>
-                <div class="section-column">
-                    <h3>Right tap:<br/>Buzz Honey Ale</h3>
-                    <img src="img/buzz-label-thumb.png" width="292" height="200" />
-                    <p>A light bodied beer with a bit of sweetness. Our Buzz Honey Ale is a favorite with light beer drinkers. One of our customer favorites, it's fresh and crisp with a slightly sweet honey taste.</p>
-                </div>
-            </ul>
+            <div id="beer-list" />
         </section>
 
         <section class="wrapper light-section">
@@ -57,14 +49,16 @@
                 <div class="section-column">
                     <h3>Rodrigo Silveira</h3>
                     <p>Recipe follower. Beer taster.</p>
-                    <img class="avatar" src="img/rodms.jpg" />
+                    <a href="http://blog.rodms.com/">
+                        <img class="avatar" src="img/rodms.jpg" />
+                    </a>
                 </div>
                 <div class="section-column">
                     <h3>Dani Mauler</h3>
                     <p>Creative Director. Illustrator.</p>
                     <img class="avatar" src="img/mauler.jpg" />
                 </div>
-            </ul>
+            </div>
         </section>
 
         <div id="content">
@@ -94,11 +88,15 @@
 
         <div class="footer-container">
             <footer class="wrapper">
-                <h3>&copy; 2015 Weiserod Picobrewery</h3>
+                <h3>&copy; 2015 Weiserod Picobrewery -
+                    <a href="https://github.com/rodms10/weiserod">
+                        Github <i class="fa fa-github fa-lg"></i>
+                    </a>
+                </h3>
             </footer>
         </div>
         </div> <!-- #main-container -->
 
-        <!-- <script src="js/app.js"></script> -->
+        <script src="js/app.js"></script>
     </body>
 </html>
