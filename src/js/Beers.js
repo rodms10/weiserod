@@ -8,7 +8,7 @@ var Beers = {
       description: "A light bodied beer with a bit of sweetness. Our Buzz Honey Ale is a favorite with light beer drinkers. One of our customer favorites, it's fresh and crisp with a slightly sweet honey taste.",
       labelThumbImg: "img/buzz-label-thumb.png",
       labelImg: "img/buzz-label-thumb.png",
-      width: 292,
+      width: 200,
     },
 
     oatee: {
