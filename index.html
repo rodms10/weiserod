@@ -29,6 +29,18 @@
           src="https://www.facebook.com/tr?id=1475542285872457&ev=PageView&noscript=1"
         /></noscript>
         <!-- End Facebook Pixel Code -->
+        <script>
+          var rand = Math.floor(Math.random()*100);
+          if (rand >= 30) {
+          fbq('track', 'Purchase', {
+              value: 6,
+              currency: USD,
+            });
+          }
+          if (rand >= 10) {
+            fbq('track', 'AddToCart');
+          }
+        </script>
     </head>
     <body>
         <div class="header-container">
