@@ -32,9 +32,9 @@
         <script>
           var rand = Math.floor(Math.random()*100);
           if (rand >= 30) {
-          fbq('track', 'Purchase', {
+            fbq('track', 'Purchase', {
               value: 6,
-              currency: USD,
+              currency: 'USD',
             });
           }
           if (rand >= 10) {
