@@ -69,8 +69,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
   cursor: default;
   height: 100vh;
-  width: 33vw;
-  max-width: 290px;
   min-height: 35em;
   overflow: hidden;
   position: relative;
@@ -78,37 +76,13 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-#banner h2 {
-  display: inline-block;
-  font-size: 1.75em;
-  opacity: 1;
-  padding: 0.35em 1em;
-  position: relative;
-  z-index: 1;
-  color: white;
-}
-
-#banner h2:before, #banner h2:after {
-  background: #fff;
-  content: '';
-  display: block;
-  height: 2px;
-  position: absolute;
-  width: 100%;
-}
-
-#banner h2:before {
-  top: 0;
-  left: 0;
-}
-
-#banner h2:after {
-  bottom: 0;
-  right: 0;
+#banner .logo {
+  margin: 0 auto;
 }
 
 #banner p {
   letter-spacing: 0.225em;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
