@@ -13,7 +13,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/rodms10/weiserod/issues"
   },
-  "homepage": "https://github.com/rodms10/weiserod#readme"
+  "homepage": "https://github.com/rodms10/weiserod#readme",
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  }
 }
