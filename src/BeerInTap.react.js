@@ -10,6 +10,7 @@ class BeerInTap extends Component{
         <h3 className="tap">{this.props.tap} tap</h3>
         <h3>{beer.name} {beer.style}</h3>
         <img
+          alt="Beer Logo"
           src={beer.labelThumbImg}
           width={beer.width}
           height="200"
