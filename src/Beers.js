@@ -1,5 +1,4 @@
-
-var Beers = {
+const Beers = {
   beers: {
     buzz: {
       name: "Buzz",
@@ -28,4 +27,4 @@ var Beers = {
   },
 };
 
-module.exports = Beers;
+export default Beers;

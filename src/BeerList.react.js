@@ -1,9 +1,9 @@
-var BeerInTap = require('./BeerInTap.react');
-var Beers = require('./Beers');
-var React = require('react');
+import BeerInTap from './BeerInTap.react';
+import Beers from './Beers';
+import React, { Component } from 'react';
 
-var BeerList = React.createClass({
-  render: function () {
+class BeerList extends Component {
+  render() {
     var leftBeer = Beers.beers[Beers.current.left];
     var rightBeer = Beers.beers[Beers.current.right];
 
@@ -14,6 +14,6 @@ var BeerList = React.createClass({
       </div>
     );
   }
-});
+};
 
-module.exports = BeerList;
+export default BeerList;

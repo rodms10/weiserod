@@ -1,14 +1,8 @@
-var React = require('react');
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-var {PropTypes} = React;
-
-var BeerInTap = React.createClass({
-  propTypes: {
-    tap: PropTypes.string.isRequired,
-    beer: PropTypes.object.isRequired,
-  },
-
-  render: function () {
+class BeerInTap extends Component{
+  render() {
     var beer = this.props.beer;
 
     return (
@@ -24,6 +18,11 @@ var BeerInTap = React.createClass({
       </div>
     );
   }
-});
+};
 
-module.exports = BeerInTap;
+BeerInTap.propTypes = {
+  tap: PropTypes.string.isRequired,
+  beer: PropTypes.object.isRequired,
+}
+
+export default BeerInTap;
