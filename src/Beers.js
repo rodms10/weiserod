@@ -23,7 +23,7 @@ const Beers = {
       style: "Red Ale",
       abv: "4.7%",
       occasion: "Crafted exclusively for CareML Beer Stay",
-      description: "Moderate maltiness with strong careml notes. The swallow will bring up light roasted grain and suttle oak qualities helping to dry out the finish. A hop presence in both aroma and bitterness intensifies the mouthfeel.",
+      description: "Moderate maltiness with strong careml notes. The swallow will bring up light roasted grain and subtle oak qualities helping to dry out the finish. A hop presence in both aroma and bitterness intensifies the mouthfeel.",
       labelThumbImg: "img/violating-violence-thumb.jpg",
       width: 200,
     },
