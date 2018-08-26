@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 /* main container */
 
 .main-container {
-  background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/keg.jpg");
+  background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/keg.jpg");
   background-attachment: fixed;
   background-position: center 3em;
   background-repeat: no-repeat;
@@ -154,6 +154,10 @@ section.wrapper {
 
 .section-column.column-wide {
   width: calc(60% + 90px);
+}
+
+.section-column.column-wide img {
+  display: inline-block;
 }
 
 .section-column h3 {

@@ -15,7 +15,7 @@ class BeerInTapSpecial extends Component{
           width={beer.width}
           height="200"
         />
-        <p>{beer.occasion}</p>
+        <h3 class="occasion">{beer.occasion}</h3>
         <p>{beer.description}</p>
       </div>
     );

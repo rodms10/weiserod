@@ -22,7 +22,7 @@ const Beers = {
       name: "Violating Violence",
       style: "Red Ale",
       abv: "4.7%",
-      occasion: "This unique red ale was crafted exclusively for CareML",
+      occasion: "Crafted exclusively for CareML Beer Stay",
       description: "Moderate maltiness with strong careml notes. The swallow will highlight light roasted grain and suttle oak qualities helping to dry out the finish. A hop presence in both aroma and bitterness will enhance the mouthfeel.",
       labelThumbImg: "img/violating-violence-thumb.jpg",
       width: 200,
