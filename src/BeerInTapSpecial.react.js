@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class BeerInTap extends Component{
+class BeerInTapSpecial extends Component{
   render() {
     const beer = this.props.beer;
 
     return (
-      <div className="section-column">
-        <h3 className="tap">{this.props.tap} tap</h3>
+      <div className="section-column column-wide">
+        <h3 className="tap">Special Edition</h3>
         <h3>{beer.name} {beer.style}</h3>
         <img
           alt="Beer Logo"
@@ -15,15 +15,15 @@ class BeerInTap extends Component{
           width={beer.width}
           height="200"
         />
+        <p>{beer.occasion}</p>
         <p>{beer.description}</p>
       </div>
     );
   }
 };
 
-BeerInTap.propTypes = {
-  tap: PropTypes.string.isRequired,
+BeerInTapSpecial.propTypes = {
   beer: PropTypes.object.isRequired,
 }
 
-export default BeerInTap;
+export default BeerInTapSpecial;

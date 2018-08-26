@@ -152,6 +152,10 @@ section.wrapper {
   background-color: #eee;
 }
 
+.section-column.column-wide {
+  width: calc(60% + 90px);
+}
+
 .section-column h3 {
   letter-spacing: 0.125em;
 }

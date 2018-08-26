@@ -1,17 +1,24 @@
 import BeerInTap from './BeerInTap.react';
+import BeerInTapSpecial from './BeerInTapSpecial.react';
 import Beers from './Beers';
 import React, { Component } from 'react';
 
 class BeerList extends Component {
   render() {
-    var leftBeer = Beers.beers[Beers.current.left];
-    var rightBeer = Beers.beers[Beers.current.right];
+    const leftBeer = Beers.beers[Beers.current.left];
+    const rightBeer = Beers.beers[Beers.current.right];
+    const specialBeer = Beers.beers[Beers.current.special];
 
     return (
-      <div className="section-column-container">
-        <BeerInTap tap="Left" beer={leftBeer} />
-        <BeerInTap tap="Right" beer={rightBeer} />
-      </div>
+      <React.Fragment>
+        <div className="section-column-container">
+          <BeerInTapSpecial beer={specialBeer} />
+        </div>
+        <div className="section-column-container">
+          <BeerInTap tap="Left" beer={leftBeer} />
+          <BeerInTap tap="Right" beer={rightBeer} />
+        </div>
+      </React.Fragment>
     );
   }
 };
