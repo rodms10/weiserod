@@ -6,17 +6,22 @@ class BeerInTapSpecial extends Component{
     const beer = this.props.beer;
 
     return (
-      <div className="section-column column-wide">
+      <div className="section-column section-wide">
         <h3 className="tap">Special Edition</h3>
         <h3>{beer.name} {beer.style}</h3>
-        <img
-          alt="Beer Logo"
-          src={beer.labelThumbImg}
-          width={beer.width}
-          height="200"
-        />
-        <h3 class="occasion">{beer.occasion}</h3>
-        <p>{beer.description}</p>
+        <div className="section-column-container">
+          <div className="special-beer-logo">
+            <img
+              alt="Beer Logo"
+              src={beer.labelThumbImg}
+              height="250"
+            />
+          </div>
+          <div className="special-text-column">
+            <h3 className="special-occasion">{beer.occasion}</h3>
+            <p className="special-description">{beer.description}</p>
+          </div>
+        </div>
       </div>
     );
   }

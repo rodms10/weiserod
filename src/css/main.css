@@ -142,6 +142,7 @@ section.wrapper {
   display: flex;
   justify-content: center;
   margin: auto;
+  max-width: 2200px;
 }
 
 .section-column {
@@ -152,12 +153,24 @@ section.wrapper {
   background-color: #eee;
 }
 
-.section-column.column-wide {
+.section-column.section-wide {
   width: calc(60% + 90px);
 }
 
-.section-column.column-wide img {
-  display: inline-block;
+.special-text-column {
+  margin: auto 20px;
+}
+
+.special-beer-logo {
+  margin: 20px;
+}
+
+.special-occasion {
+  color: #dc5e64;
+}
+
+.special-description {
+  text-align: left;
 }
 
 .section-column h3 {
@@ -224,13 +237,15 @@ img.avatar {
     flex-direction: column;
   }
 
-  .section-column {
+  .section-column,
+  .section-column.section-wide {
     width: inherit;
   }
 
   .section-column img {
     max-width: 100%;
     height: auto;
+    width: 200px;
   }
 
   .footer-container h3 {
